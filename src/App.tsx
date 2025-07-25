@@ -1,11 +1,16 @@
-import './App.css'
+import { BrowserRouter as Router } from 'react-router-dom';
+import { RouterConfig } from './routes/AppRouter';
 
-function App() {
-  return (
-    <>
-      
-    </>
-  )
-}
+const App = () => (
+  <Router>
+    <div className="app">
+      {/* Тут може бути хедер/футер */}
+      <main>
+        <RouterConfig />
+      </main>
+    </div>
+  </Router>
+);
 
-export default App
+export default App;
+
